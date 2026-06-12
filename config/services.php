@@ -35,4 +35,25 @@ return [
         ],
     ],
 
+    'virustotal' => [
+        'api_key' => env('VIRUSTOTAL_API_KEY'),
+        'base_url' => env('VIRUSTOTAL_BASE_URL', 'https://www.virustotal.com/api/v3'),
+        'poll_interval_seconds' => env('VIRUSTOTAL_POLL_INTERVAL', 4),
+        'max_poll_attempts' => env('VIRUSTOTAL_MAX_POLL_ATTEMPTS', 15),
+    ],
+
+    'openrouter' => [
+        'api_key' => env('OPENROUTER_API_KEY'),
+        'model' => env('OPENROUTER_MODEL', 'nex-agi/nex-n2-pro:free'),
+        'base_url' => env('OPENROUTER_BASE_URL', 'https://openrouter.ai/api/v1'),
+        'referer' => env('APP_URL'),
+    ],
+
+    'tokenrouter' => [
+        'api_key' => env('TOKENROUTER_API_KEY'),
+        'model' => env('TOKENROUTER_MODEL', 'MiniMax-M3'),
+        'base_url' => env('TOKENROUTER_BASE_URL', 'https://api.tokenrouter.com/v1'),
+        'referer' => env('APP_URL'),
+    ],
+
 ];
